@@ -1,29 +1,21 @@
-# vue-service-model-example
+# vue-service-model Example
+
+Example project for [vue-service-model](https://freakzlike.github.io/vue-service-model/).
+
+This project contains an example frontend usage of [vue-service-model](https://freakzlike.github.io/vue-service-model/) and a small [Express.js](https://expressjs.com/) REST backend API. 
 
 ## Project setup
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Start frontend
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Start backend
 
-### Run your unit tests
+```sh
+npm run serve:backend
 ```
-npm run test:unit
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
