@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "body-parser": "^1.19.0",
-    "core-js": "^3.6.4",
+    "core-js": "^3.6.5",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "lowdb": "^1.0.0",
@@ -32,11 +32,11 @@
     "vue-service-model": "^0.9.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.3.0",
-    "@vue/cli-plugin-eslint": "~4.3.0",
-    "@vue/cli-plugin-router": "~4.3.0",
-    "@vue/cli-plugin-unit-jest": "~4.3.0",
-    "@vue/cli-service": "~4.3.0",
+    "@vue/cli-plugin-babel": "^4.3.1",
+    "@vue/cli-plugin-eslint": "^4.3.1",
+    "@vue/cli-plugin-router": "^4.3.1",
+    "@vue/cli-plugin-unit-jest": "^4.3.1",
+    "@vue/cli-service": "^4.3.1",
     "@vue/test-utils": "1.0.0-beta.31",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
