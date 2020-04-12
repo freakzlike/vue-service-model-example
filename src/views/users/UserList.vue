@@ -1,18 +1,33 @@
 <template>
   <table-view>
     <template v-slot:head>
-      <table-column-header :model="model" field-name="id"/>
-      <table-column-header :model="model" field-name="name"/>
+      <model-label tag="th" :model="model" field-name="id"/>
+      <model-label tag="th" :model="model" field-name="name"/>
+      <model-label tag="th" :model="model" field-name="username"/>
+      <model-label tag="th" :model="model" field-name="email"/>
     </template>
 
     <template v-slot:body>
       <template v-for="user in users">
         <tr :key="user.id">
           <td>
-            <display-field :model="user" field-name="id"/>
+            <router-link :to="{name: 'UserDetail', params: {pk: user.pk}}">
+              <display-field :model="user" field-name="id"/>
+            </router-link>
           </td>
+
           <td>
-            <display-field :model="user" field-name="name"/>
+            <router-link :to="{name: 'UserDetail', params: {pk: user.pk}}">
+              <display-field :model="user" field-name="name"/>
+            </router-link>
+          </td>
+
+          <td>
+            <display-field :model="user" field-name="username"/>
+          </td>
+
+          <td>
+            <display-field :model="user" field-name="email"/>
           </td>
         </tr>
       </template>
@@ -24,7 +39,7 @@
   import {DisplayField} from 'vue-service-model'
 
   import TableView from '@/components/TableView'
-  import TableColumnHeader from '@/components/TableColumnHeader'
+  import ModelLabel from '@/components/ModelLabel'
 
   import {User} from '@/models/User'
 
@@ -33,7 +48,7 @@
     components: {
       DisplayField,
       TableView,
-      TableColumnHeader
+      ModelLabel
     },
     data () {
       return {

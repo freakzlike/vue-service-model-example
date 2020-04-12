@@ -1,0 +1,345 @@
+{
+  "albumId": 7,
+  "userId": 6,
+  "photoId": 28,
+  "albums": [
+    {
+      "userId": 1,
+      "id": 1,
+      "title": "quidem molestiae enim"
+    },
+    {
+      "userId": 1,
+      "id": 2,
+      "title": "sunt qui excepturi placeat culpa"
+    },
+    {
+      "userId": 2,
+      "id": 3,
+      "title": "omnis laborum odio"
+    },
+    {
+      "userId": 3,
+      "id": 4,
+      "title": "non esse culpa molestiae omnis sed optio"
+    },
+    {
+      "userId": 4,
+      "id": 5,
+      "title": "eaque aut omnis a"
+    },
+    {
+      "userId": 4,
+      "id": 6,
+      "title": "natus impedit quibusdam illo est"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Leanne Graham",
+      "username": "Bret",
+      "email": "Sincere@april.biz",
+      "address": {
+        "street": "Kulas Light",
+        "suite": "Apt. 556",
+        "city": "Gwenborough",
+        "zipcode": "92998-3874",
+        "geo": {
+          "lat": "-37.3159",
+          "lng": "81.1496"
+        }
+      },
+      "phone": "1-770-736-8031 x56442",
+      "website": "hildegard.org",
+      "company": {
+        "name": "Romaguera-Crona",
+        "catchPhrase": "Multi-layered client-server neural-net",
+        "bs": "harness real-time e-markets"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Ervin Howell",
+      "username": "Antonette",
+      "email": "Shanna@melissa.tv",
+      "address": {
+        "street": "Victor Plains",
+        "suite": "Suite 879",
+        "city": "Wisokyburgh",
+        "zipcode": "90566-7771",
+        "geo": {
+          "lat": "-43.9509",
+          "lng": "-34.4618"
+        }
+      },
+      "phone": "010-692-6593 x09125",
+      "website": "anastasia.net",
+      "company": {
+        "name": "Deckow-Crist",
+        "catchPhrase": "Proactive didactic contingency",
+        "bs": "synergize scalable supply-chains"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Clementine Bauch",
+      "username": "Samantha",
+      "email": "Nathan@yesenia.net",
+      "address": {
+        "street": "Douglas Extension",
+        "suite": "Suite 847",
+        "city": "McKenziehaven",
+        "zipcode": "59590-4157",
+        "geo": {
+          "lat": "-68.6102",
+          "lng": "-47.0653"
+        }
+      },
+      "phone": "1-463-123-4447",
+      "website": "ramiro.info",
+      "company": {
+        "name": "Romaguera-Jacobson",
+        "catchPhrase": "Face to face bifurcated interface",
+        "bs": "e-enable strategic applications"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Patricia Lebsack",
+      "username": "Karianne",
+      "email": "Julianne.OConner@kory.org",
+      "address": {
+        "street": "Hoeger Mall",
+        "suite": "Apt. 692",
+        "city": "South Elvis",
+        "zipcode": "53919-4257",
+        "geo": {
+          "lat": "29.4572",
+          "lng": "-164.2990"
+        }
+      },
+      "phone": "493-170-9623 x156",
+      "website": "kale.biz",
+      "company": {
+        "name": "Robel-Corkery",
+        "catchPhrase": "Multi-tiered zero tolerance productivity",
+        "bs": "transition cutting-edge web services"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Chelsey Dietrich",
+      "username": "Kamren",
+      "email": "Lucio_Hettinger@annie.ca",
+      "address": {
+        "street": "Skiles Walks",
+        "suite": "Suite 351",
+        "city": "Roscoeview",
+        "zipcode": "33263",
+        "geo": {
+          "lat": "-31.8129",
+          "lng": "62.5342"
+        }
+      },
+      "phone": "(254)954-1289",
+      "website": "demarco.info",
+      "company": {
+        "name": "Keebler LLC",
+        "catchPhrase": "User-centric fault-tolerant solution",
+        "bs": "revolutionize end-to-end systems"
+      }
+    }
+  ],
+  "photos": [
+    {
+      "albumId": 1,
+      "id": 1,
+      "title": "accusamus beatae ad facilis cum similique qui sunt",
+      "url": "https://i.picsum.photos/id/1/400/400.jpg",
+      "thumbnailUrl": "https://i.picsum.photos/id/1/150/150.jpg"
+    },
+    {
+      "albumId": 1,
+      "id": 2,
+      "title": "reprehenderit est deserunt velit ipsam",
+      "url": "https://i.picsum.photos/id/2/400/400.jpg",
+      "thumbnailUrl": "https://i.picsum.photos/id/2/150/150.jpg"
+    },
+    {
+      "albumId": 1,
+      "id": 3,
+      "title": "officia porro iure quia iusto qui ipsa ut modi",
+      "url": "https://i.picsum.photos/id/3/400/400.jpg",
+      "thumbnailUrl": "https://i.picsum.photos/id/3/150/150.jpg"
+    },
+    {
+      "albumId": 1,
+      "id": 4,
+      "title": "culpa odio esse rerum omnis laboriosam voluptate repudiandae",
+      "url": "https://i.picsum.photos/id/4/400/400.jpg",
+      "thumbnailUrl": "https://i.picsum.photos/id/4/150/150.jpg"
+    },
+    {
+      "albumId": 1,
+      "id": 5,
+      "title": "natus nisi omnis corporis facere molestiae rerum in",
+      "url": "https://i.picsum.photos/id/5/400/400.jpg",
+      "thumbnailUrl": "https://i.picsum.photos/id/5/150/150.jpg"
+    },
+    {
+      "albumId": 1,
+      "id": 6,
+      "title": "accusamus ea aliquid et amet sequi nemo",
+      "url": "https://i.picsum.photos/id/6/400/400.jpg",
+      "thumbnailUrl": "https://i.picsum.photos/id/6/150/150.jpg"
+    },
+    {
+      "albumId": 1,
+      "id": 7,
+      "title": "officia delectus consequatur vero aut veniam explicabo molestias",
+      "url": "https://i.picsum.photos/id/7/400/400.jpg",
+      "thumbnailUrl": "https://i.picsum.photos/id/7/150/150.jpg"
+    },
+    {
+      "albumId": 1,
+      "id": 8,
+      "title": "aut porro officiis laborum odit ea laudantium corporis",
+      "url": "https://i.picsum.photos/id/8/400/400.jpg",
+      "thumbnailUrl": "https://i.picsum.photos/id/8/150/150.jpg"
+    },
+    {
+      "albumId": 1,
+      "id": 9,
+      "title": "qui eius qui autem sed",
+      "url": "https://i.picsum.photos/id/9/400/400.jpg",
+      "thumbnailUrl": "https://i.picsum.photos/id/9/150/150.jpg"
+    },
+    {
+      "albumId": 1,
+      "id": 10,
+      "title": "beatae et provident et ut vel",
+      "url": "https://i.picsum.photos/id/10/400/400.jpg",
+      "thumbnailUrl": "https://i.picsum.photos/id/10/150/150.jpg"
+    },
+    {
+      "albumId": 2,
+      "id": 11,
+      "title": "non sunt voluptatem placeat consequuntur rem incidunt",
+      "url": "https://i.picsum.photos/id/11/400/400.jpg",
+      "thumbnailUrl": "https://i.picsum.photos/id/11/150/150.jpg"
+    },
+    {
+      "albumId": 2,
+      "id": 12,
+      "title": "eveniet pariatur quia nobis reiciendis laboriosam ea",
+      "url": "https://i.picsum.photos/id/12/400/400.jpg",
+      "thumbnailUrl": "https://i.picsum.photos/id/12/150/150.jpg"
+    },
+    {
+      "albumId": 2,
+      "id": 13,
+      "title": "soluta et harum aliquid officiis ab omnis consequatur",
+      "url": "https://i.picsum.photos/id/13/400/400.jpg",
+      "thumbnailUrl": "https://i.picsum.photos/id/13/150/150.jpg"
+    },
+    {
+      "albumId": 2,
+      "id": 14,
+      "title": "ut ex quibusdam dolore mollitia",
+      "url": "https://i.picsum.photos/id/14/400/400.jpg",
+      "thumbnailUrl": "https://i.picsum.photos/id/14/150/150.jpg"
+    },
+    {
+      "albumId": 3,
+      "id": 15,
+      "title": "incidunt alias vel enim",
+      "url": "https://i.picsum.photos/id/15/400/400.jpg",
+      "thumbnailUrl": "https://i.picsum.photos/id/15/150/150.jpg"
+    },
+    {
+      "albumId": 3,
+      "id": 16,
+      "title": "eaque iste corporis tempora vero distinctio consequuntur nisi nesciunt",
+      "url": "https://i.picsum.photos/id/16/400/400.jpg",
+      "thumbnailUrl": "https://i.picsum.photos/id/16/150/150.jpg"
+    },
+    {
+      "albumId": 3,
+      "id": 17,
+      "title": "et eius nisi in ut reprehenderit labore eum",
+      "url": "https://i.picsum.photos/id/17/400/400.jpg",
+      "thumbnailUrl": "https://i.picsum.photos/id/17/150/150.jpg"
+    },
+    {
+      "albumId": 4,
+      "id": 18,
+      "title": "possimus dolor minima provident ipsam",
+      "url": "https://i.picsum.photos/id/18/400/400.jpg",
+      "thumbnailUrl": "https://i.picsum.photos/id/18/150/150.jpg"
+    },
+    {
+      "albumId": 4,
+      "id": 19,
+      "title": "et accusantium enim pariatur eum nihil fugit",
+      "url": "https://i.picsum.photos/id/19/400/400.jpg",
+      "thumbnailUrl": "https://i.picsum.photos/id/19/150/150.jpg"
+    },
+    {
+      "albumId": 4,
+      "id": 20,
+      "title": "eum laborum in sunt ea",
+      "url": "https://i.picsum.photos/id/20/400/400.jpg",
+      "thumbnailUrl": "https://i.picsum.photos/id/20/150/150.jpg"
+    },
+    {
+      "albumId": 4,
+      "id": 21,
+      "title": "dolorum ipsam odit",
+      "url": "https://i.picsum.photos/id/21/400/400.jpg",
+      "thumbnailUrl": "https://i.picsum.photos/id/21/150/150.jpg"
+    },
+    {
+      "albumId": 4,
+      "id": 22,
+      "title": "occaecati sed earum ab ut vel quibusdam perferendis nihil",
+      "url": "https://i.picsum.photos/id/22/400/400.jpg",
+      "thumbnailUrl": "https://i.picsum.photos/id/22/150/150.jpg"
+    },
+    {
+      "albumId": 4,
+      "id": 23,
+      "title": "sed quia accusantium nemo placeat dolor ut",
+      "url": "https://i.picsum.photos/id/23/400/400.jpg",
+      "thumbnailUrl": "https://i.picsum.photos/id/23/150/150.jpg"
+    },
+    {
+      "albumId": 5,
+      "id": 24,
+      "title": "nesciunt dolorum consequatur ullam tempore accusamus debitis sit",
+      "url": "https://i.picsum.photos/id/24/400/400.jpg",
+      "thumbnailUrl": "https://i.picsum.photos/id/24/150/150.jpg"
+    },
+    {
+      "albumId": 5,
+      "id": 25,
+      "title": "explicabo vel omnis corporis debitis qui qui",
+      "url": "https://i.picsum.photos/id/25/400/400.jpg",
+      "thumbnailUrl": "https://i.picsum.photos/id/25/150/150.jpg"
+    },
+    {
+      "albumId": 5,
+      "id": 26,
+      "title": "labore vel voluptate ipsum quaerat debitis velit",
+      "url": "https://i.picsum.photos/id/26/400/400.jpg",
+      "thumbnailUrl": "https://i.picsum.photos/id/26/150/150.jpg"
+    },
+    {
+      "albumId": 5,
+      "id": 27,
+      "title": "beatae est vel tenetur",
+      "url": "https://i.picsum.photos/id/27/400/400.jpg",
+      "thumbnailUrl": "https://i.picsum.photos/id/27/150/150.jpg"
+    }
+  ]
+}

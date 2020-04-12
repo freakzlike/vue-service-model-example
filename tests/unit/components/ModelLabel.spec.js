@@ -1,8 +1,8 @@
 import {shallowMount} from '@vue/test-utils'
-import TableColumnHeader from '@/components/TableColumnHeader.vue'
+import ModelLabel from '@/components/ModelLabel.vue'
 import {BaseModel, Field} from 'vue-service-model'
 
-describe('TableColumnHeader', () => {
+describe('ModelLabel', () => {
   const label = 'Field label'
 
   class TestModel extends BaseModel {
@@ -12,10 +12,11 @@ describe('TableColumnHeader', () => {
   }
 
   it('should render field label', async () => {
-    const wrapper = shallowMount(TableColumnHeader, {
+    const wrapper = shallowMount(ModelLabel, {
       propsData: {
         model: new TestModel(),
-        fieldName: 'title'
+        fieldName: 'title',
+        tag: 'div'
       }
     })
     expect(wrapper.vm.field).toBeInstanceOf(Field)

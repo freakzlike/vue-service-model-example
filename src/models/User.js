@@ -7,6 +7,8 @@ export class User extends ServiceModel {
 
   static fieldsDef = {
     id: new Field({primaryKey: true, label: 'ID'}),
-    name: new Field({label: 'Name'})
+    name: new Field({label: 'Name'}),
+    username: new Field({label: 'Username'}),
+    email: new Field({label: 'Email'})
   }
 }
