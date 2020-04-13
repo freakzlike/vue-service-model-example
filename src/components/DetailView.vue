@@ -1,28 +1,31 @@
 <template>
-  <div class="container">
+  <div v-if="errorMessage">
+    {{ errorMessage }}
+  </div>
+  <div v-else class="container">
+    <slot/>
+
     <div class="actions">
       <slot name="actions"/>
     </div>
-    <table>
-      <thead>
-      <slot name="head"/>
-      </thead>
-      <tbody>
-      <slot name="body"/>
-      </tbody>
-    </table>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'TableView'
+    name: 'DetailView',
+    props: {
+      errorMessage: {
+        type: String,
+        default: null
+      }
+    }
   }
 </script>
 
 <style lang="sass" scoped>
   .container
-    max-width: 1000px
+    max-width: 700px
     margin-left: auto
     margin-right: auto
 

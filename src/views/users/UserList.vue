@@ -1,5 +1,10 @@
 <template>
   <table-view>
+    <template v-slot:actions>
+      <button @click="loadUsers">Refresh</button>
+      <router-link :to="{name: 'UserCreate'}" tag="button">Create</router-link>
+    </template>
+
     <template v-slot:head>
       <model-label tag="th" :model="model" field-name="id"/>
       <model-label tag="th" :model="model" field-name="name"/>
@@ -61,7 +66,7 @@
     },
     methods: {
       async loadUsers () {
-        this.users = await User.objects.list()
+        this.users = await User.objects.list({noCache: true})
       }
     }
   }

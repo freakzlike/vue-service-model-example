@@ -1,6 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`UserDetail should render correctly 1`] = `
+exports[`UserDetail should render create correctly 1`] = `
+<div class="container" edit="true">
+  <div class="row">
+    <div><span>
+    ID
+  </span></div>
+    <div><span></span></div>
+  </div>
+  <div class="row">
+    <div><span>
+    Name
+  </span></div>
+    <div><input type="text"></div>
+  </div>
+  <div class="row">
+    <div><span>
+    Username
+  </span></div>
+    <div><input type="text"></div>
+  </div>
+  <div class="row">
+    <div><span>
+    Email
+  </span></div>
+    <div><input type="text"></div>
+  </div>
+  <div class="actions"><button class="">Back</button> <button>Save</button></div>
+</div>
+`;
+
+exports[`UserDetail should render detail correctly 1`] = `
 <div class="container">
   <div class="row">
     <div><span>
@@ -26,5 +56,36 @@ exports[`UserDetail should render correctly 1`] = `
   </span></div>
     <div><span>Sincere@april.biz</span></div>
   </div>
+  <div class="actions"><button class="">Edit</button> <button>Delete</button></div>
+</div>
+`;
+
+exports[`UserDetail should render edit correctly 1`] = `
+<div class="container" edit="true">
+  <div class="row">
+    <div><span>
+    ID
+  </span></div>
+    <div><span>1</span></div>
+  </div>
+  <div class="row">
+    <div><span>
+    Name
+  </span></div>
+    <div><input type="text" value="Leanne Graham"></div>
+  </div>
+  <div class="row">
+    <div><span>
+    Username
+  </span></div>
+    <div><input type="text" value="Bret"></div>
+  </div>
+  <div class="row">
+    <div><span>
+    Email
+  </span></div>
+    <div><input type="text" value="Sincere@april.biz"></div>
+  </div>
+  <div class="actions"><button class="">Back</button> <button>Save</button></div>
 </div>
 `;

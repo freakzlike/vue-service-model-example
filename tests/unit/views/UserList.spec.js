@@ -36,7 +36,7 @@ describe('UserList', () => {
     expect(wrapper.html()).toMatchSnapshot()
 
     expect(mockUserObjectsList).toBeCalledTimes(1)
-    expect(mockUserObjectsList.mock.calls[0]).toEqual([])
+    expect(mockUserObjectsList.mock.calls[0]).toEqual([{noCache: true}])
     mockUserObjectsList.mockRestore()
   })
 })

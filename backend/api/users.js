@@ -34,4 +34,32 @@ exports = module.exports = function (app, db) {
       res.status(404).send('Not found')
     }
   })
+
+  /**
+   * Update user
+   */
+  app.put('/users/:id', (req, res) => {
+    const userId = parseInt(req.params.id)
+    const user = db.get('users').find({id: userId}).value()
+    if (user) {
+      const newUserData = {
+        ...user,
+        ...req.body
+      }
+
+      db.get('users').find({id: userId}).assign(newUserData).write()
+      res.json(newUserData)
+    } else {
+      res.status(404).send('Not found')
+    }
+  })
+
+  /**
+   * Delete user
+   */
+  app.delete('/users/:id', (req, res) => {
+    const userId = parseInt(req.params.id)
+    db.get('users').remove(val => val.id === userId).write()
+    res.status(204).send()
+  })
 }

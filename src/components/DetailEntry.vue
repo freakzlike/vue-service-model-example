@@ -46,9 +46,12 @@
     flex: 1 1 auto
     flex-wrap: wrap
     text-align: left
+    height: 32px
 
     > div
       flex: 0 0 50%
       width: 50%
       max-width: 50%
+      margin-top: 4px
+      margin-bottom: 4px
 </style>

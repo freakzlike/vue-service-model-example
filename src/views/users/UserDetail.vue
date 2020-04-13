@@ -1,28 +1,43 @@
 <template>
-  <div v-if="errorMessage">
-    {{ errorMessage }}
-  </div>
-  <div v-else class="container">
+  <detail-view :error-message="errorMessage" :edit="edit">
     <detail-entry :model="user" field-name="id"/>
-    <detail-entry :model="user" field-name="name"/>
-    <detail-entry :model="user" field-name="username"/>
-    <detail-entry :model="user" field-name="email"/>
-  </div>
+    <detail-entry :model="user" field-name="name" :edit="edit"/>
+    <detail-entry :model="user" field-name="username" :edit="edit"/>
+    <detail-entry :model="user" field-name="email" :edit="edit"/>
+
+    <template v-if="user" v-slot:actions>
+      <template v-if="edit">
+        <router-link :to="cancelRoute" tag="button">Back</router-link>
+        <button @click="saveUser">Save</button>
+      </template>
+
+      <template v-else>
+        <router-link :to="{name: 'UserEdit', params: {pk}}" tag="button">Edit</router-link>
+        <button @click="deleteUser">Delete</button>
+      </template>
+    </template>
+  </detail-view>
 </template>
 
 <script>
   import {NotFoundAPIException} from 'vue-service-model'
 
-  import {User} from '@/models/User'
+  import DetailView from '@/components/DetailView'
   import DetailEntry from '@/components/DetailEntry'
+
+  import {User} from '@/models/User'
 
   export default {
     name: 'UserDetail',
-    components: {DetailEntry},
+    components: {DetailView, DetailEntry},
     props: {
       pk: {
         type: [String, Number],
-        required: true
+        default: null
+      },
+      edit: {
+        type: Boolean,
+        default: false
       }
     },
     data () {
@@ -32,13 +47,25 @@
         editMode: false
       }
     },
+    computed: {
+      isCreate () {
+        return this.edit && !this.pk
+      },
+      cancelRoute () {
+        return this.isCreate ? {name: 'UserList'} : {name: 'UserDetail', params: {pk: this.pk}}
+      }
+    },
     watch: {
       pk () {
         this.loadUser()
       }
     },
     created () {
-      this.loadUser()
+      if (this.isCreate) {
+        this.user = new User()
+      } else {
+        this.loadUser()
+      }
     },
     methods: {
       async loadUser () {
@@ -53,14 +80,15 @@
             throw err
           }
         }
+      },
+      async deleteUser () {
+        await this.user.delete()
+        this.$router.push({name: 'UserList'})
+      },
+      async saveUser () {
+        await this.user.save()
+        this.$router.push({name: 'UserDetail', params: {pk: this.user.pk}})
       }
     }
   }
 </script>
-
-<style lang="sass" scoped>
-  .container
-    max-width: 700px
-    margin-left: auto
-    margin-right: auto
-</style>

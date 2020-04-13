@@ -1,34 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`UserList should render correctly 1`] = `
-<table>
-  <thead>
-    <th>
-      ID
-    </th>
-    <th>
-      Name
-    </th>
-    <th>
-      Username
-    </th>
-    <th>
-      Email
-    </th>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="#/users/1" class=""><span>1</span></a></td>
-      <td><a href="#/users/1" class=""><span>Leanne Graham</span></a></td>
-      <td><span>Bret</span></td>
-      <td><span>Sincere@april.biz</span></td>
-    </tr>
-    <tr>
-      <td><a href="#/users/2" class=""><span>2</span></a></td>
-      <td><a href="#/users/2" class=""><span>Ervin Howell</span></a></td>
-      <td><span>Antonette</span></td>
-      <td><span>Shanna@melissa.tv</span></td>
-    </tr>
-  </tbody>
-</table>
+<div class="container">
+  <div class="actions"><button>Refresh</button> <button class="">Create</button></div>
+  <table>
+    <thead>
+      <th>
+        ID
+      </th>
+      <th>
+        Name
+      </th>
+      <th>
+        Username
+      </th>
+      <th>
+        Email
+      </th>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#/users/1" class=""><span>1</span></a></td>
+        <td><a href="#/users/1" class=""><span>Leanne Graham</span></a></td>
+        <td><span>Bret</span></td>
+        <td><span>Sincere@april.biz</span></td>
+      </tr>
+      <tr>
+        <td><a href="#/users/2" class=""><span>2</span></a></td>
+        <td><a href="#/users/2" class=""><span>Ervin Howell</span></a></td>
+        <td><span>Antonette</span></td>
+        <td><span>Shanna@melissa.tv</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 `;
