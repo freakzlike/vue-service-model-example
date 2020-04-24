@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div>
-      <model-label tag="span" :model="model" :field-name="fieldName"/>
+      <field-label tag="span" :model="model" :field-name="fieldName"/>
     </div>
     <div>
       <template v-if="edit">
@@ -15,13 +15,11 @@
 </template>
 
 <script>
-  import {BaseModel, DisplayField, InputField} from 'vue-service-model'
-
-  import ModelLabel from '@/components/ModelLabel'
+  import {BaseModel, FieldLabel, DisplayField, InputField} from 'vue-service-model'
 
   export default {
     name: 'DetailEntry',
-    components: {ModelLabel, DisplayField, InputField},
+    components: {FieldLabel, DisplayField, InputField},
     props: {
       model: {
         required: true,

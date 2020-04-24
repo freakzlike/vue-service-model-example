@@ -6,10 +6,10 @@
     </template>
 
     <template v-slot:head>
-      <model-label tag="th" :model="model" field-name="id"/>
-      <model-label tag="th" :model="model" field-name="name"/>
-      <model-label tag="th" :model="model" field-name="username"/>
-      <model-label tag="th" :model="model" field-name="email"/>
+      <field-label tag="th" :model="model" field-name="id"/>
+      <field-label tag="th" :model="model" field-name="name"/>
+      <field-label tag="th" :model="model" field-name="username"/>
+      <field-label tag="th" :model="model" field-name="email"/>
     </template>
 
     <template v-slot:body>
@@ -41,19 +41,18 @@
 </template>
 
 <script>
-  import {DisplayField} from 'vue-service-model'
+  import {FieldLabel, DisplayField} from 'vue-service-model'
 
   import TableView from '@/components/TableView'
-  import ModelLabel from '@/components/ModelLabel'
 
   import {User} from '@/models/User'
 
   export default {
     name: 'UserList',
     components: {
+      FieldLabel,
       DisplayField,
-      TableView,
-      ModelLabel
+      TableView
     },
     data () {
       return {
@@ -66,7 +65,7 @@
     },
     methods: {
       async loadUsers () {
-        this.users = await User.objects.list({noCache: true})
+        this.users = await User.objects.list()
       }
     }
   }

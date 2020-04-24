@@ -5,18 +5,10 @@ exports[`UserList should render correctly 1`] = `
   <div class="actions"><button>Refresh</button> <button class="">Create</button></div>
   <table>
     <thead>
-      <th>
-        ID
-      </th>
-      <th>
-        Name
-      </th>
-      <th>
-        Username
-      </th>
-      <th>
-        Email
-      </th>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Username</th>
+      <th>Email</th>
     </thead>
     <tbody>
       <tr>
