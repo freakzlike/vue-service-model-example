@@ -33,6 +33,8 @@ describe('UserList', () => {
     await wrapper.vm.$nextTick()
     await wrapper.vm.$nextTick()
 
+    await wrapper.vm.$nextTick()
+
     expect(wrapper.html()).toMatchSnapshot()
 
     expect(mockUserObjectsList).toBeCalledTimes(1)

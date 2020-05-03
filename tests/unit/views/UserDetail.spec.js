@@ -33,6 +33,7 @@ describe('UserDetail', () => {
     // Wait for DisplayField to resolve value
     await wrapper.vm.$nextTick()
     await wrapper.vm.$nextTick()
+    await wrapper.vm.$nextTick()
 
     expect(wrapper.html()).toMatchSnapshot()
 
@@ -67,6 +68,7 @@ describe('UserDetail', () => {
     // Wait for DisplayField to resolve value
     await wrapper.vm.$nextTick()
     await wrapper.vm.$nextTick()
+    await wrapper.vm.$nextTick()
 
     expect(wrapper.html()).toMatchSnapshot()
 
@@ -89,6 +91,7 @@ describe('UserDetail', () => {
     expect(wrapper.vm.user.data).toEqual({})
 
     // Wait for ModelLabel and InputField to render correctly
+    await wrapper.vm.$nextTick()
     await wrapper.vm.$nextTick()
     await wrapper.vm.$nextTick()
     await wrapper.vm.$nextTick()
