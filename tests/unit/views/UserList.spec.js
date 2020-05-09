@@ -7,6 +7,15 @@ import {User} from '@/models/User'
 import db from '../../db.json'
 
 describe('UserList', () => {
+  const waitRender = async wrapper => {
+    await wrapper.vm.$nextTick()
+    await wrapper.vm.$nextTick()
+    await wrapper.vm.$nextTick()
+    await wrapper.vm.$nextTick()
+    await wrapper.vm.$nextTick()
+    await wrapper.vm.$nextTick()
+  }
+
   it('should render correctly', async () => {
     const users = [
       new User(db.users[0]),
@@ -26,14 +35,7 @@ describe('UserList', () => {
     expect(wrapper.vm.users).toHaveLength(users.length)
 
     // Wait to render DisplayField and ModelLabel
-    await wrapper.vm.$nextTick()
-    await wrapper.vm.$nextTick()
-
-    // Wait for DisplayField to resolve value
-    await wrapper.vm.$nextTick()
-    await wrapper.vm.$nextTick()
-
-    await wrapper.vm.$nextTick()
+    await waitRender(wrapper)
 
     expect(wrapper.html()).toMatchSnapshot()
 

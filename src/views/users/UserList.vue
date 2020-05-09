@@ -10,6 +10,7 @@
       <field-label tag="th" :model="model" field-name="name"/>
       <field-label tag="th" :model="model" field-name="username"/>
       <field-label tag="th" :model="model" field-name="email"/>
+      <field-label tag="th" :model="model" field-name="active"/>
     </template>
 
     <template v-slot:body>
@@ -33,6 +34,10 @@
 
           <td>
             <display-field :model="user" field-name="email"/>
+          </td>
+
+          <td>
+            <display-field :model="user" field-name="active"/>
           </td>
         </tr>
       </template>

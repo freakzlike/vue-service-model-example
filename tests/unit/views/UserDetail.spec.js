@@ -7,6 +7,15 @@ import {User} from '@/models/User'
 import db from '../../db.json'
 
 describe('UserDetail', () => {
+
+  const waitRender = async wrapper => {
+    await wrapper.vm.$nextTick()
+    await wrapper.vm.$nextTick()
+    await wrapper.vm.$nextTick()
+    await wrapper.vm.$nextTick()
+    await wrapper.vm.$nextTick()
+  }
+
   it('should render detail correctly', async () => {
     expect(db.users[0].id).toBe(1)
     const user = new User(db.users[0])
@@ -28,12 +37,7 @@ describe('UserDetail', () => {
     expect(wrapper.vm.user).toEqual(user)
 
     // Wait to render DisplayField
-    await wrapper.vm.$nextTick()
-
-    // Wait for DisplayField to resolve value
-    await wrapper.vm.$nextTick()
-    await wrapper.vm.$nextTick()
-    await wrapper.vm.$nextTick()
+    await waitRender(wrapper)
 
     expect(wrapper.html()).toMatchSnapshot()
 
@@ -63,12 +67,7 @@ describe('UserDetail', () => {
     expect(wrapper.vm.user).toEqual(user)
 
     // Wait to render DisplayField
-    await wrapper.vm.$nextTick()
-
-    // Wait for DisplayField to resolve value
-    await wrapper.vm.$nextTick()
-    await wrapper.vm.$nextTick()
-    await wrapper.vm.$nextTick()
+    await waitRender(wrapper)
 
     expect(wrapper.html()).toMatchSnapshot()
 
@@ -91,10 +90,7 @@ describe('UserDetail', () => {
     expect(wrapper.vm.user.data).toEqual({})
 
     // Wait for ModelLabel and InputField to render correctly
-    await wrapper.vm.$nextTick()
-    await wrapper.vm.$nextTick()
-    await wrapper.vm.$nextTick()
-    await wrapper.vm.$nextTick()
+    await waitRender(wrapper)
 
     expect(wrapper.html()).toMatchSnapshot()
 
@@ -121,10 +117,7 @@ describe('UserDetail', () => {
     const mockRouterPush = jest.spyOn(wrapper.vm.$router, 'push').mockImplementation()
 
     // Wait for ModelLabel and InputField to render correctly
-    await wrapper.vm.$nextTick()
-    await wrapper.vm.$nextTick()
-    await wrapper.vm.$nextTick()
-    await wrapper.vm.$nextTick()
+    await waitRender(wrapper)
 
     // Simulate input
     const newName = 'New Name'
