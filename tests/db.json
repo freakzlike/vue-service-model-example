@@ -40,6 +40,8 @@
       "name": "Leanne Graham",
       "username": "Bret",
       "email": "Sincere@april.biz",
+      "active": true,
+      "age": 27,
       "address": {
         "street": "Kulas Light",
         "suite": "Apt. 556",
@@ -63,6 +65,8 @@
       "name": "Ervin Howell",
       "username": "Antonette",
       "email": "Shanna@melissa.tv",
+      "active": true,
+      "age": 42,
       "address": {
         "street": "Victor Plains",
         "suite": "Suite 879",
@@ -86,6 +90,8 @@
       "name": "Clementine Bauch",
       "username": "Samantha",
       "email": "Nathan@yesenia.net",
+      "active": false,
+      "age": 35,
       "address": {
         "street": "Douglas Extension",
         "suite": "Suite 847",
@@ -109,6 +115,8 @@
       "name": "Patricia Lebsack",
       "username": "Karianne",
       "email": "Julianne.OConner@kory.org",
+      "active": true,
+      "age": 22,
       "address": {
         "street": "Hoeger Mall",
         "suite": "Apt. 692",
@@ -132,6 +140,8 @@
       "name": "Chelsey Dietrich",
       "username": "Kamren",
       "email": "Lucio_Hettinger@annie.ca",
+      "active": false,
+      "age": 36,
       "address": {
         "street": "Skiles Walks",
         "suite": "Suite 351",

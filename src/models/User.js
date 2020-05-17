@@ -1,4 +1,4 @@
-import {ServiceModel, Field, CharField, BooleanField} from 'vue-service-model'
+import {ServiceModel, Field, CharField, BooleanField, IntegerField} from 'vue-service-model'
 
 export class User extends ServiceModel {
   static urls =  'http://localhost:3000/users/'
@@ -8,6 +8,7 @@ export class User extends ServiceModel {
     name: new CharField({label: 'Name'}),
     username: new CharField({label: 'Username'}),
     email: new CharField({label: 'Email'}),
-    active: new BooleanField({label: 'Active'})
+    active: new BooleanField({label: 'Active'}),
+    age: new IntegerField({label: 'Age'})
   }
 }

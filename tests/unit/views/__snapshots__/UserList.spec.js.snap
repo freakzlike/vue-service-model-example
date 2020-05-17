@@ -17,14 +17,14 @@ exports[`UserList should render correctly 1`] = `
         <td><a href="#/users/1" class=""><span>Leanne Graham</span></a></td>
         <td><span>Bret</span></td>
         <td><span>Sincere@april.biz</span></td>
-        <td><span>No</span></td>
+        <td><span>Yes</span></td>
       </tr>
       <tr>
         <td><a href="#/users/2" class=""><span>2</span></a></td>
         <td><a href="#/users/2" class=""><span>Ervin Howell</span></a></td>
         <td><span>Antonette</span></td>
         <td><span>Shanna@melissa.tv</span></td>
-        <td><span>No</span></td>
+        <td><span>Yes</span></td>
       </tr>
     </tbody>
   </table>

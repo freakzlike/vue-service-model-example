@@ -5,6 +5,7 @@
     <detail-entry :model="user" field-name="username" :edit="edit"/>
     <detail-entry :model="user" field-name="email" :edit="edit"/>
     <detail-entry :model="user" field-name="active" :edit="edit"/>
+    <detail-entry :model="user" field-name="age" :edit="edit"/>
 
     <template v-if="user" v-slot:actions>
       <template v-if="edit">

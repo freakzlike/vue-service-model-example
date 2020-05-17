@@ -22,6 +22,10 @@ exports[`UserDetail should render create correctly 1`] = `
     <div><span>Active</span></div>
     <div><input type="checkbox"></div>
   </div>
+  <div class="row">
+    <div><span>Age</span></div>
+    <div><input type="number"></div>
+  </div>
   <div class="actions"><button class="">Back</button> <button>Save</button></div>
 </div>
 `;
@@ -46,7 +50,11 @@ exports[`UserDetail should render detail correctly 1`] = `
   </div>
   <div class="row">
     <div><span>Active</span></div>
-    <div><span>No</span></div>
+    <div><span>Yes</span></div>
+  </div>
+  <div class="row">
+    <div><span>Age</span></div>
+    <div><span>27</span></div>
   </div>
   <div class="actions"><button class="">Edit</button> <button>Delete</button></div>
 </div>
@@ -72,7 +80,11 @@ exports[`UserDetail should render edit correctly 1`] = `
   </div>
   <div class="row">
     <div><span>Active</span></div>
-    <div><input type="checkbox"></div>
+    <div><input type="checkbox" checked="checked"></div>
+  </div>
+  <div class="row">
+    <div><span>Age</span></div>
+    <div><input type="number" value="27"></div>
   </div>
   <div class="actions"><button class="">Back</button> <button>Save</button></div>
 </div>
