@@ -61,7 +61,7 @@
     },
     data () {
       return {
-        model: new User(),
+        model: User,
         users: []
       }
     },
