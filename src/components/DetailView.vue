@@ -6,7 +6,15 @@
     <slot/>
 
     <div class="actions">
-      <slot name="actions"/>
+      <template v-if="edit">
+        <router-link :to="cancelRoute" tag="button">Back</router-link>
+        <button @click="doSave">Save</button>
+      </template>
+
+      <template v-else>
+        <router-link :to="editRoute" tag="button">Edit</router-link>
+        <button @click="doDelete">Delete</button>
+      </template>
     </div>
   </div>
 </template>
@@ -15,9 +23,29 @@
   export default {
     name: 'DetailView',
     props: {
+      edit: {
+        type: Boolean,
+        default: false
+      },
       errorMessage: {
         type: String,
         default: null
+      },
+      editRoute: {
+        type: Object,
+        default: null
+      },
+      cancelRoute: {
+        type: Object,
+        default: null
+      }
+    },
+    methods: {
+      doSave () {
+        this.$emit('save')
+      },
+      doDelete () {
+        this.$emit('delete')
       }
     }
   }

@@ -1,23 +1,16 @@
 <template>
-  <detail-view :error-message="errorMessage" :edit="edit">
+  <detail-view :edit="edit"
+               :error-message="errorMessage"
+               :edit-route="{name: 'UserEdit', params: {pk}}"
+               :cancel-route="cancelRoute"
+               @save="saveUser"
+               @delete="deleteUser">
     <detail-entry :model="user" field-name="id"/>
     <detail-entry :model="user" field-name="name" :edit="edit"/>
     <detail-entry :model="user" field-name="username" :edit="edit"/>
     <detail-entry :model="user" field-name="email" :edit="edit"/>
     <detail-entry :model="user" field-name="active" :edit="edit"/>
     <detail-entry :model="user" field-name="age" :edit="edit"/>
-
-    <template v-if="user" v-slot:actions>
-      <template v-if="edit">
-        <router-link :to="cancelRoute" tag="button">Back</router-link>
-        <button @click="saveUser">Save</button>
-      </template>
-
-      <template v-else>
-        <router-link :to="{name: 'UserEdit', params: {pk}}" tag="button">Edit</router-link>
-        <button @click="deleteUser">Delete</button>
-      </template>
-    </template>
   </detail-view>
 </template>
 
@@ -45,8 +38,7 @@
     data () {
       return {
         user: null,
-        errorMessage: null,
-        editMode: false
+        errorMessage: null
       }
     },
     computed: {

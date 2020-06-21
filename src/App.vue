@@ -6,6 +6,8 @@
       <router-link to="/">Home</router-link>
       <span> - </span>
       <router-link :to="{name: 'UserList'}">Users</router-link>
+      <span> - </span>
+      <router-link :to="{name: 'AlbumList'}">Albums</router-link>
     </div>
 
     <router-view/>

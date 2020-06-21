@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`UserDetail should render create correctly 1`] = `
-<div class="container" edit="true">
+<div class="container">
   <div class="row">
     <div><span>ID</span></div>
     <div><span></span></div>
@@ -61,7 +61,7 @@ exports[`UserDetail should render detail correctly 1`] = `
 `;
 
 exports[`UserDetail should render edit correctly 1`] = `
-<div class="container" edit="true">
+<div class="container">
   <div class="row">
     <div><span>ID</span></div>
     <div><span>1</span></div>
