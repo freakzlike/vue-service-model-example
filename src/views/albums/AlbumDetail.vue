@@ -7,6 +7,7 @@
                @delete="deleteAlbum">
     <detail-entry :model="album" field-name="id"/>
     <detail-entry :model="album" field-name="title" :edit="edit"/>
+    <detail-entry :model="album" field-name="user" :edit="edit"/>
   </detail-view>
 </template>
 

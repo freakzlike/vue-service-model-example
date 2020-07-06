@@ -8,6 +8,7 @@
     <template v-slot:head>
       <field-label tag="th" :model="model" field-name="id"/>
       <field-label tag="th" :model="model" field-name="title"/>
+      <field-label tag="th" :model="model" field-name="user"/>
     </template>
 
     <template v-slot:body>
@@ -23,6 +24,10 @@
             <router-link :to="{name: 'AlbumDetail', params: {pk: album.pk}}">
               <display-field :model="album" field-name="title"/>
             </router-link>
+          </td>
+
+          <td>
+            <display-field :model="album" field-name="user"/>
           </td>
         </tr>
       </template>
