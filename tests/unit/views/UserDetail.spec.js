@@ -14,6 +14,7 @@ describe('UserDetail', () => {
     await wrapper.vm.$nextTick()
     await wrapper.vm.$nextTick()
     await wrapper.vm.$nextTick()
+    await wrapper.vm.$nextTick()
   }
 
   it('should render detail correctly', async () => {
