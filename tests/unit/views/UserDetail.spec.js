@@ -125,6 +125,8 @@ describe('UserDetail', () => {
     const nameInput = wrapper.findAll('input').at(0)
     nameInput.setValue(newName)
 
+    await wrapper.vm.$nextTick()
+
     // Check input mapped to model data
     expect(wrapper.vm.user.data).toEqual({
       name: newName

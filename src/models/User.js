@@ -1,10 +1,10 @@
-import {ServiceModel, Field, CharField, BooleanField, IntegerField} from 'vue-service-model'
+import {ServiceModel, RenderableField, CharField, BooleanField, IntegerField} from 'vue-service-model'
 
 export class User extends ServiceModel {
   static urls = 'http://localhost:3000/users/'
 
   static fieldsDef = {
-    id: new Field({primaryKey: true, label: 'ID'}),
+    id: new RenderableField({primaryKey: true, label: 'ID'}),
     name: new CharField({label: 'Name'}),
     username: new CharField({label: 'Username'}),
     email: new CharField({label: 'Email'}),
